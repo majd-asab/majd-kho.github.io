@@ -343,7 +343,7 @@ function update(){
 
 function controller(){
 	insertTable();
-	// update();
+	update();
 
 
 } 
