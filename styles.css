@@ -1,1 +1,91 @@
-../../transit/styles.css
+body{
+/*padding:0;
+margin:0;*/
+background-color:#ffffff;/*#212121;*/
+font-family: 'Space Mono', monospace;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+
+table{
+width:100%;
+padding:0;
+margin:0;
+/*font-family: 'Roboto', sans-serif;*/
+color: #ffffff;
+text-align:center;
+border-collapse: collapse;
+box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+
+th{
+padding:10px;
+color:#ffffff;
+}
+td{
+	padding:3px;
+}
+
+/* first row black */
+tr:first-child{
+	background:#000000;
+
+}
+
+/* rows alternating color*/
+tr:nth-child(even){
+	background:#bdbdbd;
+
+}
+
+/* color font black in grey rows*/
+tr:nth-child(even){
+	color:#000000;
+}
+/* color font black in grey rows*/
+tr:nth-child(){
+	color:#000000;
+}
+
+/* color font black in grey rows*/
+tr:nth-child(odd){
+	color:#000000;
+}
+/*keep  agency name white*/
+td:nth-child(1){
+	color:#ffffff;
+}
+
+/*div holding agency name*/
+/*.tNameClass{
+	margin:auto;
+	width:50%;
+	
+	background-color: #D50000;
+}
+
+.tNameClassGoTransit{
+	margin:auto;
+	width:50%;
+	background-color: #006600; 
+}
+*/
+#time-title-container{
+	display:block;
+}
+#time{
+	float:right;
+	font-size:30px;
+	font-weight: 700;
+	color:#ffffff;
+}
+#title{
+	float:left;
+	font-size:30px;
+	font-weight: 700;
+	color:#ffffff;
+}

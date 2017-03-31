@@ -1,1 +1,35 @@
-faskdjh
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tranist Status</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body onload="controller()">
+	<!--<button type="button" onclick="loadDoc()">Request data</button>
+	<button type="button" onload="insertTable()">insert Table</button>
+	<p>Click the button to request data.</p>
+	<div id="demo"></div>-->
+
+	<div id="container">
+		<div id="time-title-container">
+			<div id="title" style="color:#CC0000"> YorkU<br/>Transit Information</div>
+			<div id="time">
+			<script type="text/javascript">
+				var date   = new Date().toString().split(" ");
+				var hour24 = new Number(date[4].split(":")[0]);
+				var hour12 = (hour24 > 12)? hour24 - 12 : hour24; 
+				var minute = (hour24 > 12)? date[4].split(":")[1]+ " PM" : date[4].split(":")[1] +" AM";
+				document.getElementById("time").innerHTML = hour12+":"+minute+"<br/>"+date[0]+" "+date[1]+" "+
+				date[2];
+
+			</script></div>
+		</div>
+		<div  id="table-container"></div>
+	</div>
+		
+		<script src="single-row-route.js"></script>
+		<script src="td-scroll.js"></script>
+</body>
+
+</html>
