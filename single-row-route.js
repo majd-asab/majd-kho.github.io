@@ -233,7 +233,7 @@ function insertTable() {
 	firstRow.appendChild(transitRouteName);
 	firstRow.appendChild(transitVehicalTime);
 			
-	transitName.innerHTML = "T";
+	transitName.innerHTML = "Transit";
 	transitNumber.innerHTML = "Number";
 	transitRouteName.innerHTML = "Route";
 	transitVehicalTime.innerHTML = "Departure";
