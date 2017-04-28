@@ -1,3 +1,6 @@
+// api end points
+var ttc_106 = "http://webservices.nextbus.com/service/publicJSONFeed?command=predictions&a=ttc&stopId=11416&routeTag=106";
+var ttc_199 = "http://webservices.nextbus.com/service/publicJSONFeed?command=predictions&a=ttc&stopId=11416&routeTag=199";
 var ttc_195 = "http://webservices.nextbus.com/service/publicJSONFeed?command=predictions&a=ttc&stopId=11924&routeTag=195";
 var ttc_196 = "http://webservices.nextbus.com/service/publicJSONFeed?command=predictions&a=ttc&stopId=11280&routeTag=196";
 var ttc_41  = "http://webservices.nextbus.com/service/publicJSONFeed?command=predictions&a=ttc&stopId=11279&routeTag=41";
