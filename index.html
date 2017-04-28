@@ -9,42 +9,19 @@
   <meta name="author" content="Majd Kho">
   <link rel="icon" type="image/png" href="images/briefcase.png">
 
-  <link rel="stylesheet" href="">
-  <style type="text/css">
-  	@import url('https://fonts.googleapis.com/css?family=Roboto');
-  	body{margin:0;padding:0; font-family: 'Roboto', sans-serif; overflow-y: scroll; }
-  	section{ height:100vh; width:100vw;}
-  	.welcome-section{ background-color: #FFEB3B; color:#ffffff; font-weight: bold; text-align: center;}
-  	@-webkit-keyframes Fade{
-  		from{ opacity:0.0; }
-  		to{opacity:1.0;}
-  	}
-  	.welcome-section span{position:relative; top:30%; font-size:70px;     
-  		-webkit-animation-name:Fade; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
-    animation-name: Fade;
-    animation-duration: 1.5s;}
-    .welcome-section img{ position: relative;top:40%; 	-webkit-animation-name:Fade; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
-    animation-name: Fade;
-    animation-duration: 1.5s;}
-  	
-  	.transit-section{ background-color: #00B0FF;color:#ffffff; font-weight: bold; text-align: center; font-size: 30px;}
-  	.transit-section p{ display: inline-block; }
-  	.transit-section img{position: relative; top: 30%; right:5%; border-radius: 5px;
-  	   box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.7);opacity: 1; transition: opacity 1.5s, box-shadow 0.6s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
-  	.transit-section  img:hover{opacity:0.5;box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.3);} 
-
-  	.comingsoon-section { background-color: #263238;}
-
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 <div class="container">
  <section class="welcome-section"><span>Welcome to my showcase</span><br/><img src="images/briefcase-white.png" ></section>
- <section class="transit-section" ><img alt="image of transit time display"  src="images/transit.png";><a href="transit/index.html"></a></img><p> Live transit bus times for<br/>York University bus loop</p></section>
- <section class="comingsoon-section"></section>
+ <section class="transit-section" ><a href="transit/index.html"><img alt="image of transit time display"  src="images/transit.png";></img></a><p> Live transit bus times for<br/>York University bus loop</p></section>
+ <section class="comingsoon-section">
+ 	<div class="comingsoon-div">Coming soon:
+ 	<div class="crypto">Cryptographic online beale cipher <a href="https://github.com/majd-kho/Beale-Cipher"><img alt="padlock image" src="images/Lock-Icon-PNG-Graphic-Cave.png"></a></div>
+ 	<div class="hybrid-extension">Hybrid extension displaying website ip and location <a href="https://github.com/majd-kho/Flag-Extension"><img alt="chrome extension image" src="images/puz.png"></a></div> 
+ 	</div>
+ </section>
  </div>
 </body>
 </html>
