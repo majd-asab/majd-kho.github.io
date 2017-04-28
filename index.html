@@ -1,35 +1,50 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 <head>
-<title>Tranist Status</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8">
 
+  <title>Welcome to my showcase - Majd Kho</title>
+  <meta name="description" content="My showcase">
+  <meta name="author" content="Majd Kho">
+  <link rel="icon" type="image/png" href="images/briefcase.png">
+
+  <link rel="stylesheet" href="">
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css?family=Roboto');
+  	body{margin:0;padding:0; font-family: 'Roboto', sans-serif; overflow-y: scroll; }
+  	section{ height:100vh; width:100vw;}
+  	.welcome-section{ background-color: #FFEB3B; color:#ffffff; font-weight: bold; text-align: center;}
+  	@-webkit-keyframes Fade{
+  		from{ opacity:0.0; }
+  		to{opacity:1.0;}
+  	}
+  	.welcome-section span{position:relative; top:30%; font-size:70px;     
+  		-webkit-animation-name:Fade; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    animation-name: Fade;
+    animation-duration: 1.5s;}
+    .welcome-section img{ position: relative;top:40%; 	-webkit-animation-name:Fade; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    animation-name: Fade;
+    animation-duration: 1.5s;}
+  	
+  	.transit-section{ background-color: #00B0FF;color:#ffffff; font-weight: bold; text-align: center; font-size: 30px;}
+  	.transit-section p{ display: inline-block; }
+  	.transit-section img{position: relative; top: 30%; right:5%; border-radius: 5px;
+  	   box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.7);opacity: 1; transition: opacity 1.5s, box-shadow 0.6s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
+  	.transit-section  img:hover{opacity:0.5;box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.3);} 
+
+  	.comingsoon-section { background-color: #263238;}
+
+  </style>
 </head>
-<body onload="controller()">
-	<!--<button type="button" onclick="loadDoc()">Request data</button>
-	<button type="button" onload="insertTable()">insert Table</button>
-	<p>Click the button to request data.</p>
-	<div id="demo"></div>-->
 
-	<div id="container">
-		<div id="time-title-container">
-			<div id="title" style="color:#CC0000"> YorkU<br/>Transit Information</div>
-			<div id="time"  style="color:#CC0000">
-			<script type="text/javascript">
-				var date   = new Date().toString().split(" ");
-				var hour24 = new Number(date[4].split(":")[0]);
-				var hour12 = (hour24 > 12)? hour24 - 12 : hour24; 
-				var minute = (hour24 > 12)? date[4].split(":")[1]+ " PM" : date[4].split(":")[1] +" AM";
-				document.getElementById("time").innerHTML = hour12+":"+minute+"<br/>"+date[0]+" "+date[1]+" "+
-				date[2];
-
-			</script></div>
-		</div>
-		<div  id="table-container"></div>
-	</div>
-		
-		<script src="single-row-route.js"></script>
-		<script src="td-scroll.js"></script>
+<body>
+<div class="container">
+ <section class="welcome-section"><span>Welcome to my showcase</span><br/><img src="images/briefcase-white.png" ></section>
+ <section class="transit-section" ><img alt="image of transit time display"  src="images/transit.png";><a href="transit/index.html"></a></img><p> Live transit bus times for<br/>York University bus loop</p></section>
+ <section class="comingsoon-section"></section>
+ </div>
 </body>
-
 </html>
