@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-  	body{margin:0;padding:0; font-family: 'Roboto', sans-serif; overflow-y: scroll; }
+  	/*Desktop Css*/
+    body{margin:0;padding:0; font-family: 'Roboto', sans-serif; overflow-y: scroll; }
   	section{ height:100vh; width:100vw;}
   	.welcome-section{ background-color: #FFEB3B; color:#ffffff; font-weight: bold; text-align: center;}
   	@-webkit-keyframes Fade{
@@ -19,8 +20,8 @@
   	.transit-section{ background-color: #00B0FF;color:#ffffff; font-weight: bold; text-align: center; font-size: 30px;}
   	.transit-section p{ display: inline-block; }
   	.transit-section img{position: relative; top: 30%; right:5%; border-radius: 5px;
-  	   box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.7);opacity: 1; transition: opacity 0.5s, box-shadow 0.6s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
-  	.transit-section  img:hover{opacity:0.5;box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.3);} 
+  	       box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3); opacity: 1; transition: opacity 0.5s, box-shadow 1.5s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
+  	.transit-section  img:hover{opacity:0.5; } 
 
   	.comingsoon-section { background-color: #263238; color:#ffffff; font-weight: bold; text-align: center; font-size: 40px;}
   	.comingsoon-div{position: relative;top:20%;}
@@ -31,3 +32,11 @@
     .hybrid-extension{font-size: 20px;position: relative; bottom:-20px; text-align: left;margin:5% 0 0 20%;}
   	.hybrid-extension img{ position: relative; top:25px; opacity: 1; transition: opacity 0.5s, box-shadow 0.6s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */  }
     .hybrid-extension img:hover{opacity:0.5;box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.3);}
+
+    /*Mobile and small screen section*/
+    @media only screen and (max-width: 768px){
+      .welcome-section span{font-size:40px;}
+      .transit-section p{  position: relative; bottom: 20%;  }
+      .transit-section img{  position:relative; top:300px;  height:30%; width:70%; margin:0 0 0 10%; box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);}
+      .crypto img{ margin: 0 20% 0 20%; }
+      .hybrid-extension img{display: block; margin: 0 20% 0 25%;}
