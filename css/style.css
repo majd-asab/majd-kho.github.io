@@ -19,8 +19,8 @@
    
     .transit-section{ background-color: #00B0FF;color:#ffffff; font-weight: bold; text-align: center; font-size: 30px;}
     .transit-section div{position:relative; top:20%;}
-    .transit-section p{ position:absolute; display: inline-block; margin:0 0 0 30px;}
-    .transit-section img{position:relative; text-align:center;margin-right: auto; margin-left:auto; border-radius: 5px;
+    .transit-section p{ position:absolute; display: inline-block; margin:0 0 0 10px;}
+    .transit-section img{position:relative; text-align:center;margin-right: 10px; margin-left:auto; border-radius: 5px;
            box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3); opacity: 1; transition: opacity 0.5s, box-shadow 1.5s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
     .transit-section  img:hover{opacity:0.5; } 
 
