@@ -1,36 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-  	/*Desktop Css*/
+    /*Desktop Css*/
     body{margin:0;padding:0; font-family: 'Roboto', sans-serif; overflow-y: scroll; }
-  	section{ height:100vh; width:100vw;}
-  	.welcome-section{ background-color: #FFEB3B; color:#ffffff; font-weight: bold; text-align: center;}
-  	@-webkit-keyframes Fade{
-  		from{ opacity:0.0; }
-  		to{opacity:1.0;}
-  	}
-  	.welcome-section span{position:relative; top:30%; font-size:70px;     
-  		-webkit-animation-name:Fade; /* Safari 4.0 - 8.0 */
+    section{ height:100vh; width:100vw;}
+    .welcome-section{ background-color: #FFEB3B; color:#ffffff; font-weight: bold; text-align: center;}
+    @-webkit-keyframes Fade{
+      from{ opacity:0.0; }
+      to{opacity:1.0;}
+    }
+    .welcome-section span{position:relative; top:30%; font-size:70px;     
+      -webkit-animation-name:Fade; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
     animation-name: Fade;
     animation-duration: 1.5s;}
-    .welcome-section img{ position: relative;top:40%; 	-webkit-animation-name:Fade; /* Safari 4.0 - 8.0 */
+    .welcome-section img{ position: relative;top:40%;   -webkit-animation-name:Fade; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
     animation-name: Fade;
     animation-duration: 1.5s;}
-  	
-  	.transit-section{ background-color: #00B0FF;color:#ffffff; font-weight: bold; text-align: center; font-size: 30px;}
-  	.transit-section p{ display: inline-block; }
-  	.transit-section img{position: relative; top: 30%; right:5%; border-radius: 5px;
-  	       box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3); opacity: 1; transition: opacity 0.5s, box-shadow 1.5s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
-  	.transit-section  img:hover{opacity:0.5; } 
+   
+    .transit-section{ background-color: #00B0FF;color:#ffffff; font-weight: bold; text-align: center; font-size: 30px;}
+    .transit-section div{position:relative; top:20%;}
+    .transit-section p{ position:absolute; display: inline-block; margin:0 0 0 30px;}
+    .transit-section img{position:relative; text-align:center;margin-right: auto; margin-left:auto; border-radius: 5px;
+           box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3); opacity: 1; transition: opacity 0.5s, box-shadow 1.5s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
+    .transit-section  img:hover{opacity:0.5; } 
 
-  	.comingsoon-section { background-color: #263238; color:#ffffff; font-weight: bold; text-align: center; font-size: 40px;}
-  	.comingsoon-div{position: relative;top:20%;}
-  	.crypto{font-size: 20px; position: relative; bottom:-20px; text-align: left; margin:5% 0 0 20%;}
-  	.crypto img{height:90px; width:150px; position: relative; top:25px; opacity: 1; transition: opacity 0.5s, box-shadow 0.6s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
-  	.crypto img:hover{opacity:0.5;box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.3);}
+    .comingsoon-section { background-color: #263238; color:#ffffff; font-weight: bold; text-align: center; font-size: 40px;}
+    .comingsoon-div{position: relative;top:20%;}
+    .crypto{font-size: 20px; position: relative; bottom:-20px; text-align: left; margin:5% 0 0 20%;}
+    .crypto img{height:90px; width:150px; position: relative; top:25px; opacity: 1; transition: opacity 0.5s, box-shadow 0.6s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */}
+    .crypto img:hover{opacity:0.5;box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.3);}
 
     .hybrid-extension{font-size: 20px;position: relative; bottom:-20px; text-align: left;margin:5% 0 0 20%;}
-  	.hybrid-extension img{ position: relative; top:25px; opacity: 1; transition: opacity 0.5s, box-shadow 0.6s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */  }
+    .hybrid-extension img{ position: relative; top:25px; opacity: 1; transition: opacity 0.5s, box-shadow 0.6s; -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */  }
     .hybrid-extension img:hover{opacity:0.5;box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.3);}
 
     /*Mobile and small screen section*/
