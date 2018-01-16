@@ -104,3 +104,21 @@ body{
 	border-color: #ffffff;
 	background-color: #ffffff;
 }
+
+/* Mobile View */
+
+@media only screen and (max-width: 768px) {
+ .container {
+  grid-template-areas:
+  "header-A"
+  "header-B"
+  "main"
+  "footer"
+ }
+ .header-a,.header-b{
+ 	text-align: center;
+ }
+ .main div{
+ 	display: block;
+ }
+}
