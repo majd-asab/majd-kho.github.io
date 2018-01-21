@@ -34,7 +34,7 @@ function initMap() {
   directionsDisplay.setMap(map);
 
   // on button click, calculate and display route
-  document.getElementById("directions-button-container").addEventListener("click",function(){
+  document.getElementById("directions-button").addEventListener("click",function(){
     calculateAndDisplayRoute(directionsService,directionsDisplay);
   });
 }
@@ -116,6 +116,16 @@ function cellClicked(){
   btn.style.zIndex = "0";
 }
 
+
+//checking the "no on campus box" if user clicks on li element, not just the checkbox
+document.getElementById("away-from-campus-li").addEventListener("click",function(){
+  let awayFromCampusCheckbox = document.getElementById("not-on-campus-box").checked;
+  if(awayFromCampusCheckbox){
+    document.getElementById("not-on-campus-box").checked = false;
+  }else {
+    document.getElementById("not-on-campus-box").checked = true;
+  }
+});
 // buildings coordinates
 var buildings={
 	accolade_east: {lat:43.77271300089065,lng:-79.50114727020264},
