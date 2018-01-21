@@ -98,10 +98,8 @@ function selectObject(obj,name){
   //list height collapse
   document.getElementById("list-ul").style.height = "0";
 
-  //directions button controls
+  // //directions button controls
   btn = document.getElementById("directions-button-container");
-  btn.style.padding     = "5px";
-  btn.style.borderWidth = "3px";
   btn.style.width       = "50%";
   btn.style.zIndex      = 9999;
 }
