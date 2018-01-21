@@ -10,7 +10,12 @@
 <div class="map_and_list">
 	<div id="map"></div>
 	<div id="directions-button-container">
-		<span id="directions-button">Directions <input type="checkbox" id="not-on-campus-box" name="not-on-campus-box" >(not on campus?)</span>
+	<ul id="map-features">
+		<li>Away from campus<input type="checkbox" id="not-on-campus-box" name="not-on-campus-box" ></li>
+		<li id="directions-button">Get directions</li>
+	</ul>
+		<!-- <span id="away-from-campus">Away from campus? <input type="checkbox" id="not-on-campus-box" name="not-on-campus-box" ></span>
+		<span id="directions-button">Directions</span> -->
 	</div>
 	<div class="list-container" >
 		<div class="layover" id="layover">
@@ -19,7 +24,7 @@
 			<div class="instructions-container">
 					<div class="instructions-content">
 						1. Click on the red button to select a building.<br />
-						2. Click on directions,to draw the path from your location to the building.
+						2. Click on directions to draw the path from your location to the building.
 					</div>
 			</div>
 			<div class="arrows">

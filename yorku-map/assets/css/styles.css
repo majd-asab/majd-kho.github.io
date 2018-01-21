@@ -98,6 +98,7 @@ body{
 .instructions-content{
 	display: inline-block;
 	text-align: left;
+	margin-left:15px;
 }
 
 .arrows img{
@@ -135,6 +136,13 @@ body{
  100%{bottom:0px;}
 }
 
+/*removing arrows for mobile view*/
+@media (max-width:500px) {
+  .arrows{
+  	display: none;
+  }
+}
+
 /* Direction button div*/
 #directions-button-container{
 	width:0;
@@ -142,19 +150,24 @@ body{
  z-index: 9999;
 	position: fixed;
  margin-top: 5%;
- display:inline-block;
- background-color:black;
- border-width: 0px;
- border-color: #BDBDBD;
- border-top-style: solid;
- border-left-style: solid;
- border-bottom-style: solid;
- border-bottom-left-radius:16px; 
- border-top-left-radius:16px;
- transition: width 1s;
+ background-color: #FFF;
+ box-shadow:1px 1px 5px #000, -1px -1px  5px #000;
+ transition: all 0.5s;
+ padding:0;
 }
 
-#directions-button{
-	color:white;
+#directions-button-container ul{
+	list-style: none;
+	padding: 0px;
+	margin:0;
+}
+
+#directions-button-container li{
 	padding:5px;
+	transition: all 1s;
+}
+
+#directions-button-container li:hover{
+	background-color: #a30000;
+	color:white;
 }
